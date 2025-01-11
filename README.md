@@ -66,8 +66,16 @@
     FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
     FIREBASE_APP_ID=your_firebase_app_id
 5. **Start the development server**:
-```bash
-  npm start (backend)
-  npm run dev (frontend)
+    ```bash
+      npm start (backend)
+      npm run dev (frontend)
+## 📞 Contact
+Author: hadd24667, hieuVKU
+GitHub: MeloVerse Repository
+Email: hahnj24667@gmail.com
+
+## Demo: [video](https://drive.google.com/file/d/1Fa75iZJ8AEbnPCOuUM3Z5Qbu1uUoDscG/view?usp=sharing)
+
+
 
 
