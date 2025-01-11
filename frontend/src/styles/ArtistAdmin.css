@@ -1,0 +1,10 @@
+/* Thêm kiểu CSS này vào tệp CSS của bạn */
+.form-background {
+    position: relative;
+    background: rgba(255, 255, 255, 0.68); /* Màu trắng mờ */
+    backdrop-filter: blur(10px); /* Hiệu ứng làm mờ */
+    -webkit-backdrop-filter: blur(10px); /* Hiệu ứng làm mờ cho các trình duyệt WebKit */
+    border-radius: 10px; /* Bo góc của form */
+    padding: 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+}

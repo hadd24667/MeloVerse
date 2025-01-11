@@ -1,0 +1,75 @@
+.playlist-list {
+    padding: 25px;
+    background: linear-gradient(180deg, #7b3b3b 0%, #1e1e1e 44%);
+    border-radius: 14px;
+    color: #f0e7e7;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'SpotifyMix-Regular', sans-serif;
+    height: 100%;
+}
+
+.playlist-list .playlist-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.playlist-list .playlist-header .playlist-infor h1 {
+    font-size: 3.5rem;
+    color: #f0e7e7;
+    margin: 0;
+}
+
+.playlist-list .playlist-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.playlist-list .playlist-item {
+    display: flex;
+    align-items: center;
+    background: #5a1d1d80;
+    padding: 15px;
+    border-radius: 12px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    flex: 1 1 calc(45% - 20px);
+    min-width: 200px;
+}
+
+.playlist-list .playlist-item:hover {
+    background: #5a1d1dbf;
+    transform: scale(1.05);
+}
+
+.playlist-list .playlist-item .playlist-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.playlist-list .playlist-item .playlist-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.playlist-list .playlist-item .playlist-info .playlist-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #f0e7e7;
+}
+
+.playlist-list .playlist-item .playlist-info .playlist-creator {
+    font-size: 0.9rem;
+    color: #d3bfbf;
+}
+
+.playlist-list .playlist-item .playlist-info .playlist-songs {
+    font-size: 0.8rem;
+    color: #b9a5a5;
+}

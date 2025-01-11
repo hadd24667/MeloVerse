@@ -1,0 +1,69 @@
+.artist-for-listener {
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px;
+    background: linear-gradient(150deg,#1f1a1a 0%, #030000 20%, #1f1a1a 95%); 
+    border-radius: 10px; 
+    color: #fff;
+
+}
+.artist-for-listener .artist-list {
+    overflow-y: auto;
+    max-height: 54vh;
+}
+  
+.artist-for-listener .artist-title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    border-bottom:  3px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .artist-for-listener .artist-list .artist-rank {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  
+  .artist-for-listener .artist-list .artist-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    transition: background-color 0.3s;
+  }
+  
+  .artist-for-listener .artist-list .artist-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+  }
+  
+  .artist-for-listener .artist-list .artist-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #fff; 
+  }
+  
+  .artist-for-listener .artist-list .artist-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .artist-for-listener .artist-list .artist-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff; 
+  }
+  
+  .artist-for-listener .artist-list .artist-followers {
+    font-size: 0.9rem;
+    color: #b0b0b0; 
+  }
+  

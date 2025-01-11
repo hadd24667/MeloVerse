@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload MP3</title>
+</head>
+<body>
+<h1>Upload MP3</h1>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept="audio/mpeg">
+    <button type="submit">Upload</button>
+</form>
+<% if (typeof downloadURL !== 'undefined') { %>
+    <p>File uploaded successfully. Access it <a href="<%= downloadURL %>">here</a></p>
+    <audio controls>
+        <source src="<%= downloadURL %>" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+<% } %>
+</body>
+</html>

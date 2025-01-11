@@ -1,0 +1,73 @@
+.start-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.start-page .start-page-header {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    gap: 20px;
+    width: 20%;
+    border-radius: 30px;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 0 0 13px rgba(51, 34, 44, 0.5);
+}
+
+.start-page-header .login-button a,
+.start-page-header .singin-button a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+.start-page .start-page-header button {
+   font-family: 'SpotifyMix-Regular', sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 13px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.start-page .start-page-header .singin-button {
+    box-shadow: 0 0 13px rgba(255, 110, 196, 0.5), 0 0 30px rgba(120, 115, 245, 0.5);
+}
+.start-page .start-page-header button:hover {
+    box-shadow: 0 0 30px rgba(120, 115, 245, 0.5), 0 0 13px rgba(255, 110, 196, 0.5);
+    transform: scale(1.05);
+}
+
+.start-page .start-page-header .login-button {
+    background-color: rgb(36, 36, 36);
+    border: 1px solid rgb(255, 255, 255);
+    color: aliceblue;
+}
+
+.start-page .big-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    font-family: 'SpotifyMix-Regular', sans-serif;
+}
+
+.start-page .big-text h1 {
+    margin: 0;
+    font-size: 80px;
+    text-shadow: 0 0 13px rgba(85, 85, 85, 0.5);
+    margin-top: 160px;
+}
+
+.start-page .big-text h1, 
+.start-page .big-text h3 {
+    color: white;
+}

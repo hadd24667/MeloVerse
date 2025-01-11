@@ -1,0 +1,233 @@
+/* Container Styles */
+.playlist-container {
+    padding: 20px;
+    background: linear-gradient(180deg, #4b4b4d 0%, #19191a 35%);
+    border-radius: 16px;
+    color: #ffffff;
+    font-family: 'SpotifyMix-Regular', sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Header Section */
+.playlist-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 16px;
+}
+
+.playlist-header-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.39);
+}
+
+.playlist-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.playlist-info h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+}
+
+.playlist-info p {
+    font-size: 1.5rem;
+    color: #d1d1d1;
+    margin: 0;
+}
+/*Action*/
+.playlist-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    gap: 20px;
+}
+
+.playlist-actions i {
+    font-size: 2rem; 
+    color: #b4b4b4; 
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.playlist-actions i:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.playlist-actions .play-button {
+    color: #e998d7; 
+    font-size: 3rem; 
+}
+
+.playlist-actions .play-button:hover {
+    color: #fc5de7; 
+    transform: scale(1.2); 
+}
+
+
+/* Song List Section */
+.playlist-song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.playlist-song-item {
+    display: flex;
+    align-items: center;
+    background: #333337;
+    padding: 14px;
+    border-radius: 12px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.playlist-song-item:hover {
+    background: #3d3d42;
+    transform: translateY(-2px);
+}
+
+.playlist-song-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    margin-right: 16px;
+    object-fit: cover;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.39);
+    transition: transform 0.2s ease;
+}
+
+.playlist-song-item:hover .playlist-song-image {
+    transform: scale(1.1);
+}
+
+.playlist-song-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.playlist-song-main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.playlist-song-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.playlist-song-artist {
+    font-size: 0.9rem;
+    color: #c0c0c0;
+}
+
+.playlist-song-duration {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+
+.search-divider {
+    width: 100%;
+    height: 1px;
+    background: #0f0f0f;
+    margin: 20px 0; 
+}
+
+/* Search Section */
+.playlist-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-grow: 1; 
+    padding: 12px 0;
+    background-color: #302f2f;
+    border-radius: 8px;
+}
+
+.playlist-search i {
+    font-size: 24px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.playlist-search input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1rem; 
+}
+
+.playlist-search input::placeholder {
+    color: #a5a6b1;
+}
+
+
+.playlist-search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #333337;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    overflow: hidden;
+}
+
+.playlist-search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.playlist-search-result-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-search-result-item:hover {
+    background: #3d3d42;
+    transform: translateY(-1px);
+}
+
+.playlist-search-result-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+}
+
+.playlist-search-result-title {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.playlist-search-result-artist {
+    font-size: 0.9rem;
+    color: #d0d0d0;
+}

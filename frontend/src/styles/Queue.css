@@ -1,0 +1,116 @@
+
+@keyframes slideInContainer {
+  from {
+    transform: translateY(50px); 
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+.queue-container {
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 20px auto;
+    animation: slideInContainer 0.3s ease-out;
+  }
+  .queue-item.now-playing {
+    background-color: #3d3d3d;
+    border: 2px solid #f088ab;
+    border-radius: 8px;
+    margin-bottom: 20px; 
+  }
+
+  .queue-item.now-playing .song-information .details h4,
+  .queue-item.now-playing .song-information .details p {
+    animation: marquee 10s linear infinite;
+  }
+  
+  .now-playing-label {
+    color: #fa79a4;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  .queue-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+  }
+  
+  
+  .queue-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 66vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  
+  .queue-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .queue-item:hover {
+    transform: translateY(-2px);
+    background-color: #3636368c;
+  }
+  
+ 
+  .queue-item .song-information {
+    display: flex;
+    align-items: center;
+  }
+  
+  .queue-item .song-information img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px; 
+    margin-right: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .song-information .details {
+    display: flex;
+    flex-direction: column;
+    width: 140px; 
+    overflow: hidden;
+    white-space: nowrap; 
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .song-information .details h4 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .song-information .details p {
+    font-size: 0.9rem;
+    color: #b0b0b0; 
+    margin: 0;
+  }
+  
+  
+  @keyframes marquee {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}

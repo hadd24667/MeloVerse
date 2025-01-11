@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'SpotifyMix-Regular';
+  src: url('../public/fonts/SpotifyMixUI Regular.ttf');
+}
+@font-face {
+  font-family: 'SpotifyMix-Bold';
+  src: url('../public/fonts/SpotifyMixUI Bold.ttf');
+}
+@font-face {
+  font-family: 'SpotifyMix-TitleBold';
+  src: url('../public/fonts/SpotifyMixUI Title Bold.ttf');
+}
+@font-face {
+  font-family: 'SpotifyMix-TitleExtraBold';
+  src: url('../public/fonts/SpotifyMixUI Title Extrabold.ttf');
+}
+@font-face {
+  font-family: 'SpotifyMix-TitleVariable';
+  src: url('../public/fonts/SpotifyMixUI Title Variable.ttf');
+}
+body {
+  font-family: 'SpotifyMix-Regular', sans-serif;
+}
+/* Phong cách cho các thẻ tiêu đề */
+h1 {
+  font-family: 'SpotifyMix-TitleExtraBold', sans-serif;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'SpotifyMix-TitleBold', sans-serif;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'SpotifyMix-TitleVariable', sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+h4 {
+  font-family: 'SpotifyMix-Bold', sans-serif;
+  font-weight: normal;
+}
+
+h5 {
+  font-family: 'SpotifyMix-Regular', sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+.html, body {
+  background-color: black;
+  margin: 0;
+}
+
+html {
+  scrollbar-width: none;
+}
+/* App.css */
+
+.app-layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 4fr auto;
+  grid-template-areas: 
+      "header header header"
+      "sidebar main-content player-action";
+  height: 100vh;
+  gap: 10px;
+  background: #000;
+}
+
+.header {
+  grid-area: header;
+  width: 100%;
+}
+
+.app-sidebar  {
+  grid-area: sidebar;
+}
+
+.main-content {
+  grid-area: main-content;
+  overflow-y: auto;
+  margin-bottom: 100px;
+  scrollbar-width: none;
+}
+
+.player-action {
+  grid-area: player-action;
+  background-color: #f5f5f5;
+}

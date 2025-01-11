@@ -1,0 +1,86 @@
+.favourite-songs {
+    padding: 25px;
+    background: linear-gradient(1220deg, #3a3977 0%, #141414 80%);
+    border-radius: 14px;
+    color: #e4e4eb;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'SpotifyMix-Regular', sans-serif;
+}
+
+.favourite-songs .favourite-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.favourite-songs .favourite-header .favourite-img img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.favourite-songs .favourite-header .favourite-infor {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: end;
+}
+
+.favourite-songs .favourite-header .favourite-infor h1 {
+    font-size: 4rem;
+    color: #e4e4eb;
+    margin: 0;
+}
+
+.favourite-songs .favourite-song-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.favourite-songs .favourite-song-item {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.favourite-songs .favourite-song-item .favourite-song-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.favourite-songs .favourite-song-item .favourite-song-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.favourite-songs .favourite-song-item .favourite-song-main-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.favourite-songs .favourite-song-item .favourite-song-title {
+    font-size: 1.2rem;
+    color: #e4e4eb;
+}
+
+.favourite-songs .favourite-song-item .favourite-song-artist {
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+
+.favourite-songs .favourite-song-item .favourite-song-duration {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin-left: auto;
+}
+
+.favourite-songs .favourite-song-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

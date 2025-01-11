@@ -1,0 +1,220 @@
+.header{
+    margin-top: 5px;
+    position: sticky;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.header .logo-img {
+    width: 60px;
+}
+.header .logo > i{
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.header .logo a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.header .logo a:hover,
+.header .menu ul li:hover a,
+.header .menu ul li:hover i,
+.container main header .nav-links a:hover{
+    color: #e4afc5;
+    font-weight: bold;
+}
+
+.header .nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .nav-links a{
+    text-transform: uppercase;
+    color: #919191;
+    transition: all 0.3s ease;
+}
+
+.header .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-grow: 1; 
+    max-width: 600px;
+    background-color: #1d1d1d;
+    border: 1px solid #464748;
+    padding: 10px;
+    border-radius: 8px;
+}
+.header .search i{
+   font-size: 24px;
+   color: #fff;
+}
+
+.header .search input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.header .for-artists {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.header .for-artists i {
+    font-size: 26px;
+    color: #fff;
+}
+
+.header .for-artists a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    font-weight: bolder;
+}
+
+.header .for-artists a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e4afc5;
+    transition: width 0.3s ease;
+}
+
+.header .for-artists a:hover::after {
+    width: 100%;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    margin-right: 10px;
+}
+.profile i{
+    font-size: 20px;
+    color: #fff;
+}
+.profile .user{
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.profile .user .left{
+    display: flex;
+    align-items: center;
+    background: #3a3a42;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.profile .user .left img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile .user .right{
+    background-color: #2d252a;
+    border-radius: 0 6px 6px 0;
+    padding: 0 10px;
+    color: #fff;
+}
+
+
+@media (min-width: 1024px) {
+    .header .nav-links {
+        gap: 20px;
+    }
+
+    .header .search {
+        max-width: 600px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header .logo {
+        margin-left: 10px;
+    }
+
+    .header .logo-img {
+        width: 50px; 
+    }
+
+    .header .nav-links {
+        gap: 15px; 
+    }
+
+    .header .search {
+        max-width: 400px; 
+        margin-right: 0; 
+    }
+
+    .profile {
+        margin-right: 5px; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        padding: 5px;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header .logo {
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .header .logo-img {
+        width: 40px; 
+    }
+
+    .header .nav-links {
+        display: none; 
+    }
+
+    .header .search {
+        max-width: 300px; 
+        margin: 5px 0;
+    }
+
+    .profile {
+        margin-right: 0;
+        justify-content: center; 
+    }
+}

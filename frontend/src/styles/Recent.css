@@ -1,0 +1,90 @@
+.recent-songs {
+    padding: 25px;
+    background: linear-gradient(1220deg, #3a3977 0%, #141414 80%);
+    border-radius: 14px;
+    color: #e4e4eb;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'SpotifyMix-Regular', sans-serif;
+}
+.made-for-actions {
+    border-bottom: 1px solid #e4e4eb !important;
+    border-top: 1px solid #e4e4eb !important;
+}
+.recent-songs .recent-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.recent-songs .recent-header .recent-img img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.recent-songs .recent-header .recent-infor {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: end;
+}
+
+.recent-songs .recent-header .recent-infor h1 {
+    font-size: 4rem;
+    color: #e4e4eb;
+    margin: 0;
+}
+
+.recent-songs .recent-song-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-songs .recent-song-item {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.recent-songs .recent-song-item .recent-song-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.recent-songs .recent-song-item .recent-song-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-songs .recent-song-item .recent-song-main-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-songs .recent-song-item .recent-song-title {
+    font-size: 1.2rem;
+    color: #e4e4eb;
+}
+
+.recent-songs .recent-song-item .recent-song-artist {
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+
+.recent-songs .recent-song-item .recent-song-duration {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin-left: auto;
+}
+
+.recent-songs .recent-song-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+

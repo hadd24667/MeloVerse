@@ -1,0 +1,213 @@
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.artists-page {
+    position: relative;
+    height: 100vh;
+}
+
+.artists-page .main {
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.artists-page .header {
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    border-radius: 8px;
+    z-index: 1; 
+    margin: 0;
+}
+
+.artists-page .header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.artists-page .header .logo .logo-text h3,
+.artists-page .header .logo .logo-text h5 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.artists-page .navbar {
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    position: relative;
+}
+
+.artists-page .navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    list-style: none;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+}
+
+.artists-page .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    transition: all 0.2s ease;
+}
+
+.artists-page .navbar a:hover {
+    color: #e4afc5;
+}
+
+.artists-page .navbar a:focus{
+    color: #e4afc5;
+    text-decoration: underline;
+}
+
+.artists-page .header .profile {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.artists-page .header .profile .bx {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.artists-page .header .profile .user {
+    display: flex;
+    align-items: center;
+}
+
+.artists-page .header .profile .user .left img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.music-control-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #1b1b1b;
+}
+
+.music-controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: #acacac;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.control-btn:hover {
+    color: #ffffff;
+}
+
+.play-btn {
+    font-size: 40px;
+}
+
+.progress-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.current-time,
+.total-time {
+    font-size: 14px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 6px;
+    background-color: #333;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-art {
+    height: 100%;
+    background-color: #e4afc5;
+    width: 0;
+}
+
+@media (max-width: 768px) {
+    .artists-page .navbar ul {
+        max-height: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+    .artists-page .navbar ul.open {
+        max-height: 500px; /* Large value to accommodate all items */
+    }
+    .artists-page .navbar li {
+        margin: 10px 0;
+    }
+    .artists-page .navbar .menu-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .artists-page .navbar .menu-icon .navicon {
+        background: white;
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        margin: 4px 0;
+        transition: background 0.2s ease-out;
+    }
+    .artists-page .navbar .menu-icon.open .navicon:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 7px;
+    }
+    .artists-page .navbar .menu-icon.open .navicon:nth-child(2) {
+        opacity: 0;
+    }
+    .artists-page .navbar .menu-icon.open .navicon:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -7px;
+    }
+    .artists-page .navbar ul {
+        display: none;
+    }
+    .artists-page .navbar ul.open {
+        display: flex;
+        max-height: 500px; /* Large value to accommodate all items */
+    }
+}

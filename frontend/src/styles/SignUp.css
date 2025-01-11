@@ -1,0 +1,111 @@
+.SignUp {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a; 
+}
+
+
+.form-container1 {
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 500px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1;
+}
+
+.form-container1 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+.button-container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.button1 {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.button1:hover {
+    background-color: #555;
+}
+
+.input-container1 input, 
+.input-container1 select {
+    box-sizing: border-box; 
+}
+
+.input-container1 {
+    margin-bottom: 15px;
+}
+
+.input-container1 input, .input-container1 select {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a2a2a;
+    border: 1px solid #353535;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-container1 input:focus, .input-container1 select:focus {
+    border-color: #bb86fc; 
+}
+
+.text1 {
+    font-size: 14px;
+    color: #a1a1a1;
+    margin-bottom: 5px;
+}
+
+.hypelink1 {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+.hypelink1:hover {
+    text-decoration: underline;
+}
+
+
+.submit-button1 {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(100deg, #ffffff, #888888);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.submit-button1:hover {
+    transform: scale(1.03);
+}

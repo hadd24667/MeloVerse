@@ -1,0 +1,26 @@
+.footer {
+    background-color: #18181d; 
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.footer-divider {
+    border-color: #444;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer h3, .footer h4, .footer p {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.footer h3, .footer h4 {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}

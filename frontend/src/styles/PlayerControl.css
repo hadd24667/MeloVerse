@@ -1,0 +1,200 @@
+.player-control {
+    background-color: #000000;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.player-control .present-music {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+.player-control .present-music p,
+.player-control .present-music h4 {
+    color: #ffffff;
+    margin: 1px;
+}
+.player-control .present-music p,
+.player-control .present-music p {
+    color: #ebebebc4;
+}
+
+.player-control .present-music img{
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.player-control .buttons-and-progress {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-control .buttons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.player-control .buttons i{
+    color: #fff;
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.player-control .controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+.player-control .controls i{
+    color: #fff;
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.player-control .buttons i:hover {
+    transform: scale(1.2);
+}
+
+.player-control .controls i:hover {
+    transform: scale(1.2);
+}
+
+.player-control .buttons .play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    color: #000000;
+    border-radius: 50%;
+}
+.play-button.active i {
+    font-size: 40px; 
+    color: #ffffff; 
+}
+.play-button i {
+    font-size: 24px; 
+}
+
+.play-button i.playing {
+    font-size: 32px; 
+}
+
+.player-control .lyrics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 8px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 800px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.progress-bar {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background: #cccccc; 
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+.progress-bar::-moz-range-thumb {
+    width: 0;
+    height: 0;
+}
+
+
+.progress p {
+    margin: 0;
+    width: 40px;
+}
+
+.controls .lyric {
+    transition: transform 0.2s ease, color 0.2s ease; 
+  }
+  
+  .controls .lyric.active {
+    transform: scale(1.2); 
+    color: #f59ccd; 
+  }
+
+  .controls .queue.active {
+    transform: scale(1.2);
+    color: #f59ccd;
+  }
+  
+  .control .shuffle.active {
+    transform: scale(1.2);
+    color: #f59ccd;
+  }
+
+@media (min-width: 768px) and (max-width: 1088px) {
+
+    .player-control .present-music .song-details p {
+        display: none;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .player-control .present-music {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+    }
+
+    .player-control .present-music img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .player-control .present-music .song-details p {
+        display: none;
+    }
+
+    .player-control .buttons-and-progress .active-line {
+        width: 200px;
+    }
+
+    .player-control .controls .download,
+    .player-control .controls .volume {
+        display: none;
+    }
+
+    .player-control .controls {
+        gap: 8px;
+    }
+}

@@ -1,0 +1,57 @@
+.artist-favourites {
+    background: linear-gradient(180deg, #773a57 0%, #2b2b2b 44%);
+    padding: 20px;
+}
+
+.artist-favourites .artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.artist-favourites .artist-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #4040429c;
+    padding: 15px;
+    border-radius: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 150px;
+    text-align: center;
+}
+
+.artist-favourites .artist-header .artist-infor {
+    flex-direction: column;
+}
+
+.artist-favourites .artist-item:hover {
+    background: #7a5050a9;
+    transform: scale(1.05);
+}
+
+.artist-favourites .artist-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.artist-favourites .artist-item:hover .artist-image {
+    transform: scale(1.1);
+}
+
+.artist-favourites .artist-info .artist-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e4e4eb;
+    margin: 5px 0;
+}
+
+.artist-favourites .artist-info .artist-followers {
+    font-size: 0.9rem;
+    color: #b2b3bf;
+}

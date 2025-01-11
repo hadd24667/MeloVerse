@@ -1,0 +1,204 @@
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Chiều cao chiếm toàn màn hình */
+    background: linear-gradient(135deg, #1c1c1e, #2c2c2e);
+    color: #e0e0e0;
+}
+
+/* Profile Card */
+.profile-card {
+    position: relative;
+    background: linear-gradient(135deg, #2c2c2e, #1c1c1e);
+    border-radius: 12px;
+    padding: 25px;
+    width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.back-button {
+    position: absolute; 
+    top: 10px;
+    left: 10px; 
+    font-size: 1.5rem; 
+    color: #fff; 
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    color: #f897f0;
+    transform: scale(1.1);
+}
+
+.back-button:active {
+    transform: scale(0.95);
+}
+/* Header Section */
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile-username {
+    font-size: 1.8rem;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #f5f5f5;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.profile-role {
+    font-size: 1rem;
+    color: #d0d0d0;
+    margin-bottom: 15px;
+}
+
+/* Body Section */
+.profile-body {
+    text-align: left;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #202020, #282828);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.profile-body p {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #e0e0e0;
+}
+
+.profile-body strong {
+    color: #b0b0b0;
+}
+
+/* Actions Section */
+.profile-actions {
+    margin-top: 20px;
+}
+
+.logout-button {
+    background: linear-gradient(135deg, #3d3d3f, #1f1f20);
+    border: 1px solid #555;
+    border-radius: 6px;
+    color: #e0e0e0;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.logout-button:hover {
+    background: linear-gradient(135deg, #4a4a4c, #2c2c2e);
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.logout-button:active {
+    transform: scale(0.95);
+}
+
+/* Loading State */
+.profile-loading {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+/* Profile Input Fields */
+.edit-input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.edit-textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f4f4f4;
+    color: #333;
+    resize: none;
+}
+
+/* Buttons */
+.edit-button, .save-button {
+    background: linear-gradient(135deg, #182a42, #474f5f);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-button:hover, .save-button:hover {
+    background: #2563eb;
+}
+
+.logout-button {
+    background: linear-gradient(135deg, #523e3e, #3a1414);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background: #dc2626;
+}
+/* Profile Avatar */
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.05);
+}
+
+.avatar-label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}

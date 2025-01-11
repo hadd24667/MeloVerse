@@ -1,0 +1,206 @@
+.artist-detail {
+  width: 100%;
+  margin: 0;
+  background: linear-gradient(150deg, #1f1a1a 0%, #030000 20%, #1f1a1a 95%);
+  border-radius: 10px;
+  color: #fff;
+}
+.follow-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.follow-btn.following {
+  background: #fff;
+  color: #000;
+}
+
+.follow-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.artist-detail .artist-header {
+  position: relative;
+  padding: 40px 20px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.artist-detail .artist-info {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+.artist-detail .artist-info .artist-name {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.artist-detail .artist-info .artist-followers,
+.artist-detail .artist-info .artist-monthly-listeners {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: #b0b0b0;
+}
+
+.artist-detail .artist-info .artist-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.artist-detail .artist-info .artist-actions i {
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #fff;
+}
+
+.artist-detail .artist-info .artist-actions i:hover {
+  color: #ff4081;
+}
+
+.artist-detail .artist-info .artist-actions i.active {
+  color: #ff4081;
+}
+
+.artist-detail .artist-info .artist-actions .bxs-heart.active {
+  color: #ff4081;
+}
+
+.artist-detail .artist-info .artist-actions .play-button {
+  color: #f88ccb;
+  font-size: 2.2rem;
+  transition: all 0.3s ease;
+}
+
+.artist-detail .artist-info .artist-actions .play-button:hover {
+  transform: scale(1.1);
+}
+
+
+.artist-detail .artist-info .artist-actions button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.artist-detail .artist-info .artist-actions button:hover {
+  background-color: #f3a4e9;
+}
+
+.artist-detail .artist-songs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Khoảng cách giữa các bài hát */
+  padding: 20px;
+}
+
+.artist-detail .artist-songs h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+.artist-detail .artist-songs .song-item {
+  display: grid;
+  grid-template-columns: 30px 80px auto 1fr 60px;
+  /* Số thứ tự, ảnh, tên bài hát, lượt nghe, thời lượng */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.artist-detail .artist-songs .song-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Số thứ tự bài hát */
+.artist-detail .artist-songs .song-item .song-index {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #b0b0b0;
+}
+
+/* Ảnh bài hát */
+.artist-detail .artist-songs .song-item .song-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+/* Tên bài hát */
+.artist-detail .artist-songs .song-item .song-details {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Số lượt nghe */
+.artist-detail .artist-songs .song-item .song-listens {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  text-align: right;
+}
+
+/* Thời lượng bài hát */
+.artist-detail .artist-songs .song-item .song-duration {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  text-align: right;
+}
+
+
+.artist-detail .artist-bio {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.artist-detail .artist-bio .artist-bio-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.artist-detail .artist-bio .artist-bio-text {
+  font-size: 1.5rem;
+  color: #ddd;
+  line-height: 1.5;
+}

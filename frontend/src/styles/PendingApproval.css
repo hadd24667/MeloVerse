@@ -1,0 +1,44 @@
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.table-rounded th, .table-rounded td {
+    border: 1px solid transparent; /* Ẩn viền mặc định */
+}
+
+.table-rounded thead th {
+    background-color: #373737; /* Màu tiêu đề */
+    color: white; /* Màu chữ tiêu đề */
+}
+
+.table-rounded tbody tr:nth-child(odd) {
+    background-color: white; /* Màu nền hàng lẻ */
+}
+
+.table-rounded tbody tr:nth-child(even) {
+    background-color: #c0c0c2; /* Màu nền hàng chẵn */
+}
+
+.table-rounded tbody tr:nth-child(odd) th,
+.table-rounded tbody tr:nth-child(odd) td {
+    border-color: white; /* Màu viền hàng lẻ */
+}
+
+.table-rounded tbody tr:nth-child(even) th,
+.table-rounded tbody tr:nth-child(even) td {
+    border-color: #c0c0c2; /* Màu viền hàng chẵn */
+}
+
+.bg1 {
+    background-color: #1d5c65; /* Cái này nên đặt lại theo bảng màu */
+}
+
+.bg2222 {
+    background-color: #359daa; /* Cái này nên đặt lại theo bảng màu */
+}
+
+.bg3222 {
+    background-color: #49bdcc; /* Cái này nên đặt lại theo bảng màu */
+}
