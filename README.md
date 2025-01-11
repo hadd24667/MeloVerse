@@ -11,11 +11,11 @@
 - **👥 User Roles**:  
  ### Listener
 
-- **Search and Listen**: Search for songs, albums, or playlists; stream music in high quality.
+- **Search and Listen**: Search for songs, albums, or artists; stream music in high quality.
 - **Create and Manage Playlists**: Create, add, or remove songs from custom playlists.
-- **Follow and Like**: Mark songs or albums as favorites and follow artists.
-- **User Interface**: Intuitive design with controls for music playback (pause, play, skip).
-
+- **Follow and Like**: Mark songs, artists or albums as favorites and follow artists.
+- **User Interface**: Intuitive design with controls for music playback (pause, play, skip, smart shuffle).
+- **Personalised suggestions**: Users can **listen to personalized playlists** suggested by the system.
 ---
 
 ### Artist
@@ -28,14 +28,13 @@
 
 ### Admin
 
-- **Manage Users**: Manage accounts, activate or deactivate users/artists.
-- **Statistics and Reporting**: Track user activity, song plays, and campaign performance.
-
+- **Manage Users**: Manage accounts, activate or deactivate users.
+- **Manage Artists**: **Approve artists**, send **email notifications**, and **edit albums, songs, and artist profiles**.
+- **Statistics and Reporting**: Song upload.
+---
 - **🤖 Music Recommendations**: Personalized suggestions using collaborative filtering and user listening habits.  
 - **🔒 Secure and Scalable**: Firebase for storage, Node.js backend, and MySQL database for efficient management.
-
 ---
-
 ## 🛠 Tech Stack
 
 ### **Frontend**
