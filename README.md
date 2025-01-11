@@ -109,7 +109,7 @@
 ## 📞 Contact
 - **Author: hadd24667, hieuVKU**
 - **GitHub: MeloVerse Repository**
-- **Email: hahnj24667@gmail.com**
+- **Email: hahnj24667@gmail.com, hieusih@gmail.com**
 
 ## Demo: [video](https://drive.google.com/file/d/1Fa75iZJ8AEbnPCOuUM3Z5Qbu1uUoDscG/view?usp=sharing)
 
