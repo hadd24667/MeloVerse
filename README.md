@@ -65,9 +65,11 @@
    ```bash
    git clone https://github.com/hadd24667/MeloVerse.git
 
-2. **Navigate to the project directory**:
+2. **Navigate to the project directory (open 2 terminals)**:
    ```bash
    cd MeloVerse
+   cd frontend
+   cd backend
 3. **Install dependencies**:
    ```bash
    npm install
