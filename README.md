@@ -9,9 +9,28 @@
 - **🎵 Music Streaming**: High-quality audio streaming with seamless playback.  
 - **📝 Synchronized Lyrics**: Real-time lyrics synchronization with songs.  
 - **👥 User Roles**:  
-  - **Listeners**: Stream music, create playlists, and follow artists.  
-  - **Artists**: Upload and manage tracks, albums, and interact with listeners.  
-  - **Admins**: Manage users, content, and platform settings.  
+ ### Listener
+
+- **Search and Listen**: Search for songs, albums, or playlists; stream music in high quality.
+- **Create and Manage Playlists**: Create, add, or remove songs from custom playlists.
+- **Follow and Like**: Mark songs or albums as favorites and follow artists.
+- **User Interface**: Intuitive design with controls for music playback (pause, play, skip).
+
+---
+
+### Artist
+
+- **Upload and Manage Songs**: Upload songs with details, edit or delete tracks.
+- **Manage Albums**: Create albums, add songs, and update album info.
+- **Track Performance**: View song plays and likes statistics.
+
+---
+
+### Admin
+
+- **Manage Users**: Manage accounts, activate or deactivate users/artists.
+- **Statistics and Reporting**: Track user activity, song plays, and campaign performance.
+
 - **🤖 Music Recommendations**: Personalized suggestions using collaborative filtering and user listening habits.  
 - **🔒 Secure and Scalable**: Firebase for storage, Node.js backend, and MySQL database for efficient management.
 
