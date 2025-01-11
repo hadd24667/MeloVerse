@@ -39,13 +39,30 @@
 ## 🛠 Tech Stack
 
 ### **Frontend**
-- **Framework**: [React](https://reactjs.org/)  
-- **Styling**: [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [Styled Components](https://styled-components.com/), [Tailwind CSS](https://tailwindcss.com/)  
+- **React.js**: For building dynamic UI components.
+- **Tailwind CSS**: Utility-first CSS framework for fast, consistent design.
+- **Vite**: Build tool for fast development.
+- **Axios**: HTTP requests between frontend and backend.
+
+---
 
 ### **Backend**
-- **Server**: [Node.js](https://nodejs.org/) with [Express](https://expressjs.com/)  
-- **Database**: [MySQL](https://www.mysql.com/)  
-- **Storage**: [Firebase](https://firebase.google.com/) (for audio and image files)
+- **Node.js**: JavaScript runtime for backend logic.
+- **Express.js**: Framework for building RESTful APIs.
+- **JWT**: Token creation and verification for API security.
+- **Passport.js**: User authentication via email/OAuth.
+
+---
+
+### **Database**
+- **MySQL**: Relational database for user data, songs, playlists.
+- **Sequelize**: ORM for MySQL.
+
+---
+
+### **Authentication and Storage**
+- **Firebase**: User authentication and storage for images, audio.
+
 
 ### **Machine Learning**
 - **Recommendation System**: Collaborative Filtering  
